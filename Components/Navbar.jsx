@@ -12,7 +12,6 @@ const Navbar = () => {
   //Dark mode setup
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const currentTheme = theme === 'system' ? systemTheme : theme;
 
   //To handle Error for darkmode
   useEffect(() => {
@@ -70,7 +69,7 @@ const Navbar = () => {
 
         {/* Dark and Light Icons */}
         <div className="dark:text-white cursor-pointer hover:scale-125 duration-300 ease-in">
-          {currentTheme === 'light' ? (
+          {theme === 'light' ? (
             <div onClick={() => setTheme('dark')}>
               <BsLightbulbFill size={25} />
             </div>
