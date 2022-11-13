@@ -4,7 +4,7 @@ import project_data from '../Data/projects_data';
 import Image from 'next/image';
 import TechnologiesCard from '../Components/TechnologiesCard';
 
-const view = () => {
+const View = () => {
   const router = useRouter();
   const { id } = router.query;
   const selectedProject = project_data.filter((el) => {
@@ -36,4 +36,4 @@ const view = () => {
   );
 };
 
-export default view;
+export default View;

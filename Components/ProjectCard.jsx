@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
         priority
       />
 
-      <Link href={{ pathname: 'view', query: { id: `${props.id}` } }}>
+      <Link href={{ pathname: 'View', query: { id: `${props.id}` } }}>
         <Button onClick={() => console.log(props.id)}>
           Take a Look
         </Button>
