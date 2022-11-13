@@ -21,6 +21,7 @@ const project_data = [
       'react icon',
     ],
     image: project1,
+    link: 'https://genuine-syrniki-e4237d.netlify.app/',
   },
   {
     id: 2,

@@ -26,7 +26,10 @@ const View = () => {
                     priority
                   />
                 </div>
-                <TechnologiesCard tec={el.technologies} />
+                <TechnologiesCard
+                  tec={el.technologies}
+                  link={el.link}
+                />
               </div>
             </div>
           );
