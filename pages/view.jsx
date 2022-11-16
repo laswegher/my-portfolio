@@ -28,7 +28,8 @@ const View = () => {
                 </div>
                 <TechnologiesCard
                   tec={el.technologies}
-                  link={el.link}
+                  demoLink={el.demoLink}
+                  codeLink={el.codeLink}
                 />
               </div>
             </div>

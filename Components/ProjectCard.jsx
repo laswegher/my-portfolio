@@ -10,18 +10,21 @@ const ProjectCard = (props) => {
         {props.title}
       </h1>
 
-      <Image
-        className="min-w-[300px] h-full mb-6 mt-4 object-cover hover:cursor-grab rounded-lg active:cursor-grabbing"
-        draggable="false"
-        src={props.image}
-        alt={props.title}
-        priority
-      />
+      <div className="max-w-[400px] h-[300px]">
+        <Image
+          className="max-w-[400px] h-full mb-6 mt-4 object-cover hover:cursor-grab rounded-lg active:cursor-grabbing"
+          draggable="false"
+          src={props.image}
+          alt={props.title}
+          priority
+        />
+      </div>
 
-      <Link href={{ pathname: 'View', query: { id: `${props.id}` } }}>
-        <Button onClick={() => console.log(props.id)}>
-          Take a Look
-        </Button>
+      <Link
+        className="mt-8"
+        href={{ pathname: 'View', query: { id: `${props.id}` } }}
+      >
+        <Button>Take a Look</Button>
       </Link>
     </div>
   );

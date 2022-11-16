@@ -1,6 +1,6 @@
 import project1 from '../public/project1.png';
-import project2 from '../public/project2.jpg';
-import project3 from '../public/project3.jpg';
+import project2 from '../public/project2.png';
+import project3 from '../public/project3.png';
 import project4 from '../public/project4.jpg';
 import project5 from '../public/project5.jpg';
 import project6 from '../public/project6.jpg';
@@ -19,9 +19,11 @@ const project_data = [
       'react.js',
       'next.js',
       'react icon',
+      'framer-motion',
     ],
     image: project1,
-    link: 'https://genuine-syrniki-e4237d.netlify.app/',
+    demoLink: 'https://genuine-syrniki-e4237d.netlify.app/',
+    codeLink: 'https://github.com/laswegher/dimitri-portfolio.git',
   },
   {
     id: 2,
@@ -35,10 +37,11 @@ const project_data = [
       'react.js',
       'next.js',
       'react-icon',
-      'next.js',
-      'react icon',
+      'framer-motion',
     ],
     image: project2,
+    demoLink: 'https://imaginative-pegasus-29302d.netlify.app/',
+    codeLink: 'https://github.com/laswegher/photography-app.git',
   },
   {
     id: 3,
@@ -54,6 +57,8 @@ const project_data = [
       'react-icon',
     ],
     image: project3,
+    demoLink: 'https://eclectic-dieffenbachia-9a098a.netlify.app',
+    codeLink: 'https://github.com/laswegher/food-app.git',
   },
   {
     id: 4,

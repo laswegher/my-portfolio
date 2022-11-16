@@ -17,10 +17,7 @@ const ProjectSlider = () => {
   // Projects Data
   const projectJSX = project_data.map((el) => {
     return (
-      <div
-        key={el.id}
-        className="h-[400px]"
-      >
+      <div key={el.id}>
         <ProjectCard {...el} />
       </div>
     );
@@ -61,7 +58,7 @@ const ProjectSlider = () => {
           initial={false}
           drag="x"
           dragConstraints={{ right: 0, left: -rightWidth }}
-          className="w-full flex gap-4 "
+          className="w-full h-[400px] flex gap-4 "
         >
           {projectJSX}
         </motion.div>

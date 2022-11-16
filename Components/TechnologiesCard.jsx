@@ -3,8 +3,7 @@ import Button from './Button';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const TechnologiesCard = ({ tec, link }) => {
-  console.log(link);
+const TechnologiesCard = ({ tec, codeLink, demoLink }) => {
   return (
     <div className="flex-1 max-w-max flex flex-col items-center">
       <h1 className="text-2xl  tracking-wider border-b max-w-max pb-1 mb-5 border-b-red-500">
@@ -27,13 +26,13 @@ const TechnologiesCard = ({ tec, link }) => {
 
         <div className="flex gap-5 flex-row">
           <Link
-            href="https://github.com/laswegher/dimitri-portfolio.git"
+            href={codeLink}
             target="_blank"
           >
             <Button className="flex-1">Code</Button>
           </Link>
           <Link
-            href={link}
+            href={demoLink}
             target="_blank"
           >
             <Button className="flex-1">Demo</Button>
