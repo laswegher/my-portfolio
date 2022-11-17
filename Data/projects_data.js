@@ -1,7 +1,7 @@
 import project1 from '../public/project1.png';
 import project2 from '../public/project2.png';
 import project3 from '../public/project3.png';
-import project4 from '../public/project4.jpg';
+import project4 from '../public/project4.png';
 import project5 from '../public/project5.jpg';
 import project6 from '../public/project6.jpg';
 import project7 from '../public/project7.jpg';
@@ -62,7 +62,7 @@ const project_data = [
   },
   {
     id: 4,
-    title: 'Recipe - App',
+    title: 'Data Analytics',
     subTitle: '',
     technologies: [
       'html',
@@ -74,6 +74,8 @@ const project_data = [
       'react-icon',
     ],
     image: project4,
+    demoLink: 'https://graceful-marshmallow-5ee291.netlify.app/',
+    codeLink: 'https://github.com/laswegher/data-analytics.git',
   },
   {
     id: 5,
