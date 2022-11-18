@@ -19,12 +19,16 @@ const ProjectSlider = () => {
       id="projects"
       className="CenterComponent FCenter flex-col shadow-md dark:shadow-black/40  px-5"
     >
-      <div className="relative w-full max-w-[1000px] FCenter">
-        <h3 className="SectionTitle">Latest - Projects</h3>
-
+      <div className="relative w-full max-w-[1000px] flex flex-col items-start justify-center sm:items-center">
+        <h3 className="SectionTitle -wfull">
+          Projects{' '}
+          <span className="text-xs font-bold tracking-widest uppercase">
+            #latest
+          </span>
+        </h3>
         {/* View All Button */}
-        <div className="absolute top-4 right-0">
-          <ButtonViewAll />
+        <div className="absolute top-5 right-0">
+          <ButtonViewAll className="text-xs" />
         </div>
       </div>
 

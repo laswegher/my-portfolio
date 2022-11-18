@@ -2,7 +2,7 @@ import project1 from '../public/assets/projects/project1.png';
 import project2 from '../public/assets/projects/project2.png';
 import project3 from '../public/assets/projects/project3.png';
 import project4 from '../public/assets/projects/project4.png';
-import project5 from '../public/assets/projects/project5.jpg';
+import project5 from '../public/assets/projects/project5.png';
 import project6 from '../public/assets/projects/project6.jpg';
 import project7 from '../public/assets/projects/project7.jpg';
 
@@ -34,7 +34,6 @@ const project_data = [
       'css',
       'javascript',
       'tailwind',
-      'react.js',
       'next.js',
       'react-icon',
       'framer-motion',
@@ -52,7 +51,6 @@ const project_data = [
       'css',
       'javascript',
       'tailwind',
-      'react.js',
       'next.js',
       'react-icon',
     ],
@@ -69,7 +67,6 @@ const project_data = [
       'css',
       'javascript',
       'tailwind',
-      'react.js',
       'next.js',
       'react-icon',
     ],
@@ -79,18 +76,19 @@ const project_data = [
   },
   {
     id: 5,
-    title: 'Ultra - Web',
+    title: 'Huddle - Landing',
     subTitle: '',
     technologies: [
       'html',
       'css',
       'javascript',
-      'tailwind',
+      'styled component',
       'react.js',
-      'next.js',
       'react-icon',
     ],
     image: project5,
+    demoLink: 'https://verdant-churros-3a7251.netlify.app/',
+    codeLink: 'https://github.com/laswegher/hunddle-landing.git',
   },
   {
     id: 6,
