@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
+import ButtonViewAll from './ButtonViewAll';
 
 const TechnologiesCard = ({ tec, codeLink, demoLink }) => {
   return (
@@ -26,7 +26,7 @@ const TechnologiesCard = ({ tec, codeLink, demoLink }) => {
           })}
         </div>
 
-        <div className="flex gap-5 flex-row">
+        <div className="FCenter gap-3 flex-row">
           <Link
             href={codeLink}
             target="_blank"
@@ -39,6 +39,8 @@ const TechnologiesCard = ({ tec, codeLink, demoLink }) => {
           >
             <Button className="flex-1">Demo</Button>
           </Link>
+
+          <ButtonViewAll />
         </div>
       </div>
     </div>

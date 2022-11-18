@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import project_data from '../Data/projects_data';
 import ProjectSliderCard from './ProjectSliderCard';
-import Link from 'next/link';
+import ButtonViewAll from './ButtonViewAll';
 
 const ProjectSlider = () => {
   const [rightWidth, setRightWidth] = useState(0);
@@ -20,22 +20,12 @@ const ProjectSlider = () => {
       className="CenterComponent FCenter flex-col shadow-md dark:shadow-black/40  px-5"
     >
       <div className="relative w-full max-w-[1000px] FCenter">
-        <h3 className="SectionTitle">Projects</h3>
+        <h3 className="SectionTitle">Latest - Projects</h3>
 
         {/* View All Button */}
-        <Link
-          className="absolute top-4 right-0"
-          href="/projects"
-        >
-          <motion.p
-            className="border border-red-600 px-2 py-1 rounded-md text-sm"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: 'spring', stiffness: 600 }}
-          >
-            View All
-          </motion.p>
-        </Link>
+        <div className="absolute top-4 right-0">
+          <ButtonViewAll />
+        </div>
       </div>
 
       {/* Caurosel outer div */}

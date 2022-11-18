@@ -9,7 +9,7 @@ const projects = () => {
     <div className="w-full mt-20 FCenter flex-col">
       {/* Page Title */}
       <div className="mb-4">
-        <h3 className="SectionTitle">Projects</h3>
+        <h3 className="SectionTitle">All - Projects</h3>
       </div>
       {/* Projects Card */}
       <div className="flex flex-col gap-10 sm:gap-16 md:gap-20 mx-4">
