@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }) {
       enableSystem={true}
       attribute="class"
     >
-      <Component {...pageProps} />
       <Navbar />
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }

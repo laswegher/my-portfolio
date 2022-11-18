@@ -9,15 +9,15 @@ const SkillCard = (props) => {
         scale: 1.1,
         transition: { type: 'spring', stiffness: 600 },
       }}
-      className="w-[90%] mx-auto flex items-center justify-between shadow-xl dark:shadow-black/40 p-3"
+      className="w-[90%] mx-auto FBetween shadow-xl dark:shadow-black/40 p-3"
     >
       <div style={{ color: props.color }}>
         <props.icon className="text-5xl" />
       </div>
 
-      <h2 className="text-sm tracking-widest font-semibold">
+      <p className="font-bold sm:font-semibold uppercase">
         {props.title}
-      </h2>
+      </p>
     </motion.div>
   );
 };

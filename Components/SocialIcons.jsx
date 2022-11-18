@@ -5,36 +5,49 @@ import {
   FaLinkedin,
   FaGit,
 } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const SocialIcons = (props) => {
   return (
     <div
       className={`${props.className} w-full mx-auto flex items-center justify-between text-lg text-red-600`}
     >
-      <div
+      <motion.div
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: 'spring', stiffness: 500 }}
         style={{ padding: `${props.padding}px` }}
-        className="cursor-pointer shadow-xl rounded-full hover:scale-110 duration-300 ease-in dark:bg-gray-300"
+        className="cursor-pointer shadow-xl rounded-full dark:bg-gray-300"
       >
         <FaFacebook />
-      </div>
-      <div
+      </motion.div>
+      <motion.div
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: 'spring', stiffness: 500 }}
         style={{ padding: `${props.padding}px` }}
-        className="cursor-pointer shadow-xl rounded-full hover:scale-110 duration-300 ease-in dark:bg-gray-300"
+        className="cursor-pointer shadow-xl rounded-full dark:bg-gray-300"
       >
         <FaInstagram />
-      </div>
-      <div
+      </motion.div>
+      <motion.div
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: 'spring', stiffness: 500 }}
         style={{ padding: `${props.padding}px` }}
-        className="cursor-pointer shadow-xl rounded-full hover:scale-110 duration-300 ease-in dark:bg-gray-300"
+        className="cursor-pointer shadow-xl rounded-full dark:bg-gray-300"
       >
         <FaLinkedin />
-      </div>
-      <div
+      </motion.div>
+      <motion.div
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: 'spring', stiffness: 500 }}
         style={{ padding: `${props.padding}px` }}
-        className="cursor-pointer shadow-xl rounded-full hover:scale-110 duration-300 ease-in dark:bg-gray-300"
+        className="cursor-pointer shadow-xl rounded-full dark:bg-gray-300"
       >
         <FaGit />
-      </div>
+      </motion.div>
     </div>
   );
 };

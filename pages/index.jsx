@@ -4,7 +4,7 @@ import Contact from '../Components/Contact';
 import Hero from '../Components/Hero';
 import ProjectSlider from '../Components/ProjectSlider';
 import Skills from '../Components/Skills';
-
+import ButtonUp from '../Components/ButtonUp';
 export default function Home() {
   return (
     <div>
@@ -29,6 +29,8 @@ export default function Home() {
       <ProjectSlider />
 
       <Contact />
+
+      <ButtonUp link="/" />
     </div>
   );
 }

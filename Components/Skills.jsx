@@ -10,9 +10,9 @@ const Skills = () => {
       className="CenterComponent"
     >
       {/* Title */}
-      <h1 className="SectionTitle text-3xl md:text-6xl ">Skills</h1>
+      <h3 className="SectionTitle">Skills</h3>
       {/* Skill Cards */}
-      <div className="max-w-[1200px] w-[95%] mx-auto grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="Container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {images.map((el) => (
           <div key={el.id}>
             <SkillCard {...el} />

@@ -1,31 +1,33 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import Button from './Button';
+import Image from 'next/image';
+import Button from '../Components/Button';
+import Link from 'next/link';
 
 const ProjectCard = (props) => {
   return (
-    <div className="flex flex-col w-full h-full">
-      <h1 className="text-sm md:text-xl tracking-widest font-semibold">
-        {props.title}
-      </h1>
-
-      <div className="max-w-[400px] h-[300px]">
+    <div className="relative w-full mx-auto max-w-[800px] h-[250px] sm:h-[300px] md:h-[400px] shadow-xl dark:shadow-black/40 group rounded-xl overflow-hidden cursor-pointer">
+      {/* Image */}
+      <div className="w-full h-full">
         <Image
-          className="max-w-[400px] h-full mb-6 mt-4 object-cover hover:cursor-grab rounded-lg active:cursor-grabbing"
-          draggable="false"
-          src={props.image}
-          alt={props.title}
           priority
+          src={props.image}
+          alt="/"
+          className="w-full h-full object-cover "
         />
       </div>
 
-      <Link
-        className="mt-8"
-        href={{ pathname: 'View', query: { id: `${props.id}` } }}
-      >
-        <Button>Take a Look</Button>
-      </Link>
+      {/* Hover Text */}
+      <div className="hidden absolute group-hover:bg-black/70 group-hover:flex flex-col items-center justify-center inset-0 px-4 text-white">
+        <h4 className="mb-2">{props.title}</h4>
+        <Link
+          href={{
+            pathname: 'view',
+            query: { id: `${props.id}` },
+          }}
+        >
+          <Button>Find out</Button>
+        </Link>
+      </div>
     </div>
   );
 };

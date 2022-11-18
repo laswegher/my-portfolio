@@ -1,34 +1,29 @@
 import React from 'react';
 import project_data from '../Data/projects_data';
 import { nanoid } from 'nanoid';
-import Image from 'next/image';
-import Button from '../Components/Button';
+import ProjectCard from '../Components/ProjectCard';
+import ButtonUp from '../Components/ButtonUp';
 
 const projects = () => {
-  const projectsJSX = project_data.map((project) => {
-    return (
-      <div
-        key={nanoid(10)}
-        className="CenterComponent"
-      >
-        <div className="max-w-[800px] h-[500px] shadow-xl dark:shadow-black/40">
-          <Image
-            src={project.image}
-            alt="/"
-            className="w-full h-[400px] object-cover mb-5"
-          />
-          <div className="px-4">
-            <h1>{project.title}</h1>
-            <Button>Find out</Button>
-          </div>
-        </div>
-      </div>
-    );
-  });
-
   return (
-    <div className="pt-14">
-      <div>{projectsJSX}</div>
+    <div className="w-full mt-20 FCenter flex-col">
+      {/* Page Title */}
+      <div className="mb-4">
+        <h3 className="SectionTitle">Projects</h3>
+      </div>
+      {/* Projects Card */}
+      <div className="flex flex-col gap-10 sm:gap-16 md:gap-20 mx-4">
+        {project_data.map((project) => {
+          return (
+            <ProjectCard
+              key={nanoid(10)}
+              {...project}
+            />
+          );
+        })}
+      </div>
+
+      <ButtonUp link="/projects" />
     </div>
   );
 };
