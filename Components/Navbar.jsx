@@ -190,31 +190,31 @@ const Navbar = () => {
           {/* Mobile Navigation */}
           <ul
             onClick={handleToggle}
-            className="w-full h-screen flex items-center mb-[-80px]  mt-[-92px] justify-center text-3xl "
+            className="w-full h-screen flex items-center mb-[-80px]  mt-[-92px] justify-center text-2xl "
           >
             <div className="flex flex-col dark:text-white">
               <Link href="/">
-                <li className="p-5 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
+                <li className="p-4 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
                   HOME
                 </li>
               </Link>
               <Link href="/#about">
-                <li className="p-5 border-b-2 border-red-600  cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
+                <li className="p-4 border-b-2 border-red-600  cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
                   ABOUT
                 </li>
               </Link>
               <Link href="/#skills">
-                <li className="p-5 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
+                <li className="p-4 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
                   SKILLS
                 </li>
               </Link>
               <Link href="/#projects">
-                <li className="p-5 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
+                <li className="p-4 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
                   PROJECTS
                 </li>
               </Link>
               <Link href="/#contact">
-                <li className="p-5 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
+                <li className="p-4 border-b-2 border-red-600 cursor-pointer hover:text-red-600 hover:scale-105 duration-300 ease-in">
                   CONTACT
                 </li>
               </Link>

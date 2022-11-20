@@ -4,6 +4,8 @@ import project_data from '../Data/projects_data';
 import ProjectSliderCard from './ProjectSliderCard';
 import ButtonViewAll from './ButtonViewAll';
 
+const projetcs = project_data.reverse();
+
 const ProjectSlider = () => {
   const [rightWidth, setRightWidth] = useState(0);
   const caurosel = useRef();
@@ -20,7 +22,7 @@ const ProjectSlider = () => {
       className="CenterComponent FCenter flex-col shadow-md dark:shadow-black/40  px-5"
     >
       <div className="relative w-full max-w-[1000px] flex flex-col items-start justify-center sm:items-center">
-        <h3 className="SectionTitle -wfull">
+        <h3 className="SectionTitle">
           Projects{' '}
           <span className="text-xs font-bold tracking-widest uppercase">
             #latest
@@ -47,10 +49,10 @@ const ProjectSlider = () => {
           className="w-full h-full flex gap-4 "
         >
           {/* Project Slider Cards */}
-          {project_data.map((el) => {
+          {projetcs.map((project) => {
             return (
-              <div key={el.id}>
-                <ProjectSliderCard {...el} />
+              <div key={project.id}>
+                <ProjectSliderCard {...project} />
               </div>
             );
           })}

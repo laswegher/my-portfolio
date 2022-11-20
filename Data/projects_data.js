@@ -3,8 +3,15 @@ import project2 from '../public/assets/projects/project2.png';
 import project3 from '../public/assets/projects/project3.png';
 import project4 from '../public/assets/projects/project4.png';
 import project5 from '../public/assets/projects/project5.png';
-import project6 from '../public/assets/projects/project6.jpg';
-import project7 from '../public/assets/projects/project7.jpg';
+import project6 from '../public/assets/projects/project6.png';
+import project7 from '../public/assets/projects/project7.png';
+import project8 from '../public/assets/projects/project8.png';
+import project9 from '../public/assets/projects/project9.png';
+import project10 from '../public/assets/projects/project10.png';
+import project11 from '../public/assets/projects/project11.png';
+import project12 from '../public/assets/projects/project12.png';
+import project13 from '../public/assets/projects/project13.png';
+import project14 from '../public/assets/projects/project14.png';
 
 const project_data = [
   {
@@ -92,33 +99,84 @@ const project_data = [
   },
   {
     id: 6,
-    title: 'Data Finance',
+    title: 'BBQ - Master',
     subTitle: '',
-    technologies: [
-      'html',
-      'css',
-      'javascript',
-      'tailwind',
-      'react.js',
-      'next.js',
-      'react-icon',
-    ],
+    technologies: ['html', 'css', 'javascript'],
     image: project6,
+    demoLink: 'https://dancing-klepon-a6e4a0.netlify.app/',
+    codeLink: 'https://github.com/laswegher/bbq-master.git',
   },
   {
     id: 7,
-    title: 'Huddle - Landing Page',
+    title: 'Minimalist - Blog',
     subTitle: '',
-    technologies: [
-      'html',
-      'css',
-      'javascript',
-      'tailwind',
-      'react.js',
-      'next.js',
-      'react-icon',
-    ],
+    technologies: ['html', 'css', 'javascript'],
     image: project7,
+    demoLink: 'https://ubiquitous-piroshki-459ba6.netlify.app/',
+    codeLink: 'https://github.com/laswegher/minimalist-blog.git',
+  },
+  {
+    id: 8,
+    title: 'Airbnb',
+    subTitle: '',
+    technologies: ['html', 'css', 'javascript', 'react.js'],
+    image: project8,
+    demoLink: 'https://velvety-malasada-4d07c6.netlify.app',
+    codeLink: 'https://github.com/laswegher/airbnb-app.git',
+  },
+  {
+    id: 9,
+    title: 'Meme Generator',
+    subTitle: '',
+    technologies: ['html', 'css', 'javascript', 'react.js'],
+    image: project9,
+    demoLink: 'https://brilliant-travesseiro-4f62aa.netlify.app/',
+    codeLink: 'https://github.com/laswegher/meme-generator.git',
+  },
+  {
+    id: 10,
+    title: 'Todo app',
+    subTitle: '',
+    technologies: ['html', 'css', 'javascript', 'react.js'],
+    image: project10,
+    demoLink: 'https://enchanting-kashata-09c172.netlify.app/',
+    codeLink: 'https://github.com/laswegher/todo-app.git',
+  },
+  {
+    id: 11,
+    title: 'Travel Cards',
+    subTitle: '',
+    technologies: ['html', 'css', 'javascript', 'react.js'],
+    image: project11,
+    demoLink: 'https://jazzy-travesseiro-ef0530.netlify.app/',
+    codeLink: 'https://github.com/laswegher/travel-cards.git',
+  },
+  {
+    id: 12,
+    title: 'Smith portfolio',
+    subTitle: '',
+    technologies: ['html', 'css', 'javascript'],
+    image: project12,
+    demoLink: 'https://timely-stroopwafel-c0d930.netlify.app/',
+    codeLink: 'https://github.com/laswegher/smith-portfolio.git',
+  },
+  {
+    id: 13,
+    title: 'Dad Jokes',
+    subTitle: '',
+    technologies: ['html', 'css', 'javascript'],
+    image: project13,
+    demoLink: 'https://merry-naiad-7e9c5b.netlify.app/',
+    codeLink: 'https://github.com/laswegher/dad-jokes.git',
+  },
+  {
+    id: 14,
+    title: 'Movie App',
+    subTitle: '',
+    technologies: ['html', 'css', 'javascript'],
+    image: project14,
+    demoLink: 'https://eclectic-fairy-a095d9.netlify.app/',
+    codeLink: 'https://github.com/laswegher/movie-app.git',
   },
 ];
 

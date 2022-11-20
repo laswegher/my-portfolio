@@ -21,8 +21,8 @@ const View = () => {
           return (
             <div key={el.id}>
               <h4 className="mb-2">{el.title}</h4>
-              <div className="w-full h-full flex flex-col md:flex-row gap-10 sm:gap-4 items-center justify-between">
-                <div className="relative flex-1 w-full shadow-xl dark:shadow-black/20">
+              <div className="w-full flex flex-col md:flex-row gap-6 sm:gap-5 items-center justify-between">
+                <div className="relative min-w-min h-full shadow-xl dark:shadow-black/20">
                   <Image
                     className="w-full h-[38vh] sm:h-[48vh] md:h-[60vh] rounded-xl object-cover"
                     alt={el.title}
@@ -33,6 +33,7 @@ const View = () => {
                     <ButtonBack />
                   </div>
                 </div>
+
                 <TechnologiesCard
                   tec={el.technologies}
                   demoLink={el.demoLink}

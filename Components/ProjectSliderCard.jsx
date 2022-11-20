@@ -10,7 +10,7 @@ const ProjectSliderCard = (props) => {
         {props.title}
       </h1>
 
-      <div className="max-w-[400px] h-[200px] md:h-[300px]">
+      <div className="max-w-[400px] h-[200px] md:h-[300px] shadow-2xl dark:shadow-black">
         <Image
           className="max-w-[400px] h-full mb-6 mt-4 object-cover hover:cursor-grab rounded-lg active:cursor-grabbing"
           draggable="false"
