@@ -12,6 +12,7 @@ import project11 from '../public/assets/projects/project11.png';
 import project12 from '../public/assets/projects/project12.png';
 import project13 from '../public/assets/projects/project13.png';
 import project14 from '../public/assets/projects/project14.png';
+import project15 from '../public/assets/projects/project15.png';
 
 const project_data = [
   {
@@ -177,6 +178,25 @@ const project_data = [
     image: project14,
     demoLink: 'https://eclectic-fairy-a095d9.netlify.app/',
     codeLink: 'https://github.com/laswegher/movie-app.git',
+  },
+  {
+    id: 15,
+    title: 'Recipe App',
+    subTitle: '',
+    technologies: [
+      'html',
+      'css',
+      'javascript',
+      'tailwind',
+      'next.js',
+      'react icon',
+      'framer-motion',
+      'API',
+      'Splide',
+    ],
+    image: project15,
+    demoLink: 'https://zippy-kitten-bc8f72.netlify.app/',
+    codeLink: 'https://github.com/laswegher/recipe-app.git',
   },
 ];
 
