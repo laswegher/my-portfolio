@@ -14,6 +14,7 @@ import project13 from '../public/assets/projects/project13.png';
 import project14 from '../public/assets/projects/project14.png';
 import project15 from '../public/assets/projects/project15.png';
 import project16 from '../public/assets/projects/project16.png';
+import project17 from '../public/assets/projects/project17.png';
 
 const project_data = [
   {
@@ -217,6 +218,24 @@ const project_data = [
     image: project16,
     demoLink: 'https://courageous-crisp-1ef889.netlify.app/',
     codeLink: 'https://github.com/laswegher/exercises-app.git',
+  },
+  {
+    id: 17,
+    title: 'HooBank',
+    subTitle: '',
+    technologies: [
+      'html',
+      'css',
+      'javascript',
+      'tailwind',
+      'next.js',
+      'react.js',
+      'react-icon',
+      'framer-motion',
+    ],
+    image: project17,
+    demoLink: 'https://singular-gaufre-98582c.netlify.app/',
+    codeLink: 'https://github.com/laswegher/hoobank.git',
   },
 ];
 
