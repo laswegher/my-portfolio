@@ -15,6 +15,7 @@ import project14 from '../public/assets/projects/project14.png';
 import project15 from '../public/assets/projects/project15.png';
 import project16 from '../public/assets/projects/project16.png';
 import project17 from '../public/assets/projects/project17.png';
+import project18 from '../public/assets/projects/project18.png';
 
 const project_data = [
   {
@@ -236,6 +237,25 @@ const project_data = [
     image: project17,
     demoLink: 'https://singular-gaufre-98582c.netlify.app/',
     codeLink: 'https://github.com/laswegher/hoobank.git',
+  },
+  {
+    id: 18,
+    title: 'Real Estate',
+    subTitle: '',
+    technologies: [
+      'html',
+      'css',
+      'javascript',
+      'tailwind',
+      'next.js',
+      'react.js',
+      'react-icon',
+      'framer-motion',
+      'NProgress',
+    ],
+    image: project18,
+    demoLink: 'https://inquisitive-biscochitos-73bd87.netlify.app/',
+    codeLink: 'https://github.com/laswegher/real-estate-app.git',
   },
 ];
 
